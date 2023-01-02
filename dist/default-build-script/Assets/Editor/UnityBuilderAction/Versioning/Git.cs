@@ -52,9 +52,10 @@ namespace UnityBuilderAction.Versioning
     /// </summary>
     static int GetTotalNumberOfCommits()
     {
-      string numberOfCommitsAsString = Run(@"git rev-list --count HEAD");
+      //string numberOfCommitsAsString = Run(@"git rev-list --count HEAD");
 
-      return int.Parse(numberOfCommitsAsString);
+      //return int.Parse(numberOfCommitsAsString);
+	  return 0;
     }
 
     /// <summary>
