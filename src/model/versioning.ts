@@ -298,9 +298,10 @@ export default class Versioning {
    * Note: HEAD should not be used, as it may be detached, resulting in an additional count.
    */
   static async getTotalNumberOfCommits() {
-    const numberOfCommitsAsString = await this.git(['rev-list', '--count', this.sha]);
+    //const numberOfCommitsAsString = await this.git(['rev-list', '--count', this.sha]);
 
-    return Number.parseInt(numberOfCommitsAsString, 10);
+    //return Number.parseInt(numberOfCommitsAsString, 10);
+    return 0;
   }
 
   /**
